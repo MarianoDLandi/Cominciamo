@@ -1,15 +1,25 @@
 #include<stdio.h>
-int main()
-{
-int serbatoio;
-int litri_orari;
-int km_rimaneti;
 
+float rimanenti(float a , float b); /* questo è il prototipo di funione */
+int main()   /* qui dovrebbe essere void */{
+float s;
+float l;
+float km_rimaneti;
+float c;
 printf("digita serbatoio:\n");
-scanf("%d",&serbatoio);
+scanf("%f",&s);
 printf("digita litri/h:\n");
-scanf("%d",&litri_orari);
-km_rimaneti=serbatoio/litri_orari;
-printf("I kilometri rimaneti sono:%d \n",km_rimaneti);
-return 0;
+scanf("%f",&l);
+c = rimanenti(s, l); /*qui è dove prende il valore della funzione */
+printf("I kilometri rimaneti sono:%f \n",c);
+return 0 ;
+}
+
+float rimanenti(float a , float b)
+{
+  
+  int c; 
+  c = a / b;
+  return c ;  /*restituisce il valore di c */
+
 }
