@@ -1,6 +1,9 @@
 CFLAGS=-Wall -ansi -pedantic
 
-carburante: carburante.o rimanente.o
-carburante.o: carburante.c
-rimanente.o: rimanente.c
 
+
+cifre_separate: cifre_separate.o ciclo.o
+
+cifre_separate.o: cifre_separate.c
+
+ciclo.o: ciclo.c
